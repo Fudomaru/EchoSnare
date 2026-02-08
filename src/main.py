@@ -38,8 +38,8 @@ try:
 except OSError:
     pass
 
-date_str = time.strftime('%Y-%m-%d')
-path = '/scans/{}.jsonl'.format(date_str)
+t = time.localtime()
+path = "/scans/%04d-%02d-%02d.jsonl" % (t[0], t[1], t[2])
 
 with open(path, 'a') as f:
     f.write(json.dumps(record) + '\n')
