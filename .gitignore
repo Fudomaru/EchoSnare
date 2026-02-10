@@ -1,4 +1,4 @@
 firmware/
 __pycache__/
 *.mpy
-scans_export/
+scans_extracted/

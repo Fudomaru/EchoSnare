@@ -2,6 +2,10 @@ import network
 import time
 import json
 import os
+from machine import Pin
+
+alive_led = Pin(35, Pin.OUT)
+alive_led.on()
 
 wlan = network.WLAN(network.STA_IF)
 wlan.active(True)
