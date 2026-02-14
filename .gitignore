@@ -2,3 +2,5 @@ firmware/
 __pycache__/
 *.mpy
 scans_extracted/
+config.py
+webrepl_cfg.py

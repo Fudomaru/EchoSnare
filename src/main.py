@@ -10,7 +10,6 @@ alive_led.on()
 wlan = network.WLAN(network.STA_IF)
 wlan.active(True)
 
-
 scan_results = wlan.scan()
 
 nets = []
@@ -21,7 +20,6 @@ for ap in scan_results:
     ssid = ssid_bytes.decode('utf-8') if ssid_bytes else ""
 
     bssid = ':'.join('{:02x}'.format(b) for b in bssid_bytes)
-
     nets.append({
         's': ssid,
         'b': bssid,
